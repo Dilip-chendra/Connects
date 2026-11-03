@@ -1,0 +1,19 @@
+{
+  "name": "connects",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Connects — AI-powered startup operating system and application orchestration platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build:web": "npm run build --workspace=apps/web",
+    "lint:web": "npm run lint --workspace=apps/web",
+    "typecheck:web": "npm run typecheck --workspace=apps/web"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
